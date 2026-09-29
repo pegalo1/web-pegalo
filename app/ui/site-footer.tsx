@@ -94,7 +94,18 @@ export default function SiteFooter({ home = true }: { home?: boolean }) {
           © 2026 <PegaloName />. Todos los derechos reservados.
         </p>
         <div>
-          <a href={home ? '#inicio' : '#ficha'}>Volver arriba</a>
+          <span className="footer-credit-label">
+            Diseñado y desarrollado por:
+          </span>
+          <a
+            className="footer-credit"
+            href="https://sofiailengenchi.netlify.app/"
+            aria-label="Portfolio de Sofía Genchi, se abre en una pestaña nueva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SG
+          </a>
         </div>
       </div>
     </footer>

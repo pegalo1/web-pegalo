@@ -538,8 +538,14 @@ body .product-dialog .detail-copy .button {
 }
 .company-footer .footer-bottom > div {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
+}
+.site .company-footer .footer-bottom .footer-credit-label {
+  color: #b8c1e8;
+  font-size: 12px;
+  line-height: 1.5;
 }
 .company-footer .footer-bottom a {
   display: inline-flex;
@@ -547,6 +553,30 @@ body .product-dialog .detail-copy .button {
   gap: 8px;
   min-height: 44px;
   font-size: 12px;
+}
+@font-face {
+  font-family: Plaster;
+  src: url('/fonts/plaster-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.company-footer .footer-bottom .footer-credit {
+  color: #b8c1e8;
+  font-family: Plaster, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition:
+    color 160ms ease,
+    text-decoration-color 160ms ease;
+}
+.company-footer .footer-bottom .footer-credit:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 @media (max-width: 900px) {
   .company-footer .footer-main {

@@ -525,9 +525,9 @@ body .product-dialog .detail-copy .button {
   padding-top: 25px;
   border-top: 1px solid #ffffff30;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
 }
 .site .company-footer .footer-bottom p {
   font-size: 12px;
@@ -588,10 +588,6 @@ body .product-dialog .detail-copy .button {
   }
   .site .company-footer .footer-brand p {
     max-width: 650px;
-  }
-  .company-footer .footer-bottom {
-    align-items: flex-start;
-    flex-direction: column;
   }
 }
 @media (max-width: 520px) {

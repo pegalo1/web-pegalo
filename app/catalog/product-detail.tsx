@@ -3,13 +3,13 @@
 import { useLayoutEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Check, Plus } from 'lucide-react';
 import PegaloName from '../ui/pegalo-name';
 import type { ManagedProduct } from './content-policy';
 import ProductOptionSelect from './product-option-select';
 import { presentationGroups, quoteOptions } from './product-presentations';
 import { useQuote } from '../quote/use-quote';
+import { openQuote } from '../quote/open-quote';
 
 export default function ProductDetail({
   products,
@@ -136,9 +136,13 @@ export default function ProductDetail({
           {added ? <Check size={18} /> : <Plus size={18} />}
         </button>
         {ids.length > 0 && (
-          <Link href="/?consulta=1#catalogo" className="detail-quote-link">
+          <button
+            type="button"
+            onClick={openQuote}
+            className="detail-quote-link"
+          >
             Continuar con mi consulta ({ids.length})
-          </Link>
+          </button>
         )}
         {selected.technicalPdf && (
           <div className="technical-info">

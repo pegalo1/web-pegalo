@@ -4,7 +4,7 @@ export default function BusinessStack({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const cards = Array.from(
-      root.current?.querySelectorAll<HTMLElement>(':scope > section') ?? [],
+      root.current?.querySelectorAll<HTMLElement>(':scope > section:not(.faq-section)') ?? [],
     );
     const measure = () =>
       cards.forEach((card) => {

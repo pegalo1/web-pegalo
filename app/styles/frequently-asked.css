@@ -1,6 +1,7 @@
 .business-stack > .faq-section {
-  position: sticky;
-  top: var(--stack-top, 88px);
+  /* Answers grow in normal flow so Contacto cannot cover their controls. */
+  position: relative;
+  top: auto;
   z-index: 4;
   min-height: calc(100svh - 68px);
   background: #fff;

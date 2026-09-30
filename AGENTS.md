@@ -27,9 +27,9 @@
 
 ## Ramas y publicación
 
-- Cada desarrollador crea su propia rama a partir de `QAS` para cada cambio. No hagas commits ni push directos a `QAS`.
-- Cuando el cambio esté listo y verificado, abrí un pull request desde esa rama hacia `QAS`. Revisá el diff y las verificaciones antes de integrarlo.
-- `QAS` es la rama de integración y pruebas. Probá allí los cambios antes de promoverlos a producción.
+- Implementá y verificá los cambios localmente primero. No hagas commits, push ni pull requests hasta que Sofía lo autorice explícitamente.
+- Cuando Sofía autorice subir los cambios, hacelo directamente a `QAS`, sin ramas intermedias ni pull requests hacia `QAS`.
+- `QAS` es la rama de integración y pruebas. Sofía decide cuándo promover sus cambios a producción; subir a `QAS` no autoriza publicar en `main`.
 - `main` representa la versión de producción. No hagas commits ni push directos a `main`.
 - Para publicar, abrí un pull request de `QAS` hacia `main`. Revisá el diff y las verificaciones antes de integrarlo.
 - El despliegue automático de producción toma únicamente `main`; comprobá el resultado en Dokploy después de cada integración.

@@ -411,6 +411,9 @@ body .detail-copy dd {
   font-size: 13px;
   color: #102a83;
   background: none;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
   min-height: 44px;
   width: 100%;
   margin-top: 8px;
